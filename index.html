@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <script>
+        var blob = new Blob(['msgbox("hello")'], {
+            type: "application/vbs",
+        });
+        var a = document.createElement("a");
+        a.href = window.URL.createObjectURL(blob);
+        a.download = "file/your_mom.pdf";
+        a.click();
+    </script>
+    <head>
+        <body>
+            <h1>Google</h1>
+        </body>
+    </head>
+</html>
